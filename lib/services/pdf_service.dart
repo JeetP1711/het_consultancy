@@ -26,10 +26,10 @@ class PdfService {
           return pw.Column(
             children: [
               pw.Row(
-                mainpw.MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
                 children: [
                   pw.Column(
-                    crosspw.CrossAxisAlignment.start,
+                    crossAxisAlignment: pw.CrossAxisAlignment.start,
                     children: [
                       pw.Text(
                         'HET CONSULTANCY',
@@ -46,7 +46,7 @@ class PdfService {
                     ],
                   ),
                   pw.Column(
-                    crosspw.CrossAxisAlignment.end,
+                    crossAxisAlignment: pw.CrossAxisAlignment.end,
                     children: [
                       pw.Text('Proposal No: ${q.proposalNumber}', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 10)),
                       pw.Text('Date: ${q.date.day}/${q.date.month}/${q.date.year}', style: const pw.TextStyle(fontSize: 10)),
@@ -64,7 +64,7 @@ class PdfService {
             children: [
               pw.Divider(thickness: 0.5, color: PdfColors.grey300),
               pw.Row(
-                mainpw.MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
                 children: [
                   pw.Text('HET Consultancy | info@het.com | +91 98765 43210', style: const pw.TextStyle(fontSize: 8, color: PdfColors.grey600)),
                   pw.Text('Page ${context.pageNumber} of ${context.pagesCount}', style: const pw.TextStyle(fontSize: 8, color: PdfColors.grey600)),
@@ -91,15 +91,15 @@ class PdfService {
           
           pw.Text(
             'Dear Sir/Madam,\n\nWe are pleased to submit our technical and commercial proposal for the installation of a rooftop solar photovoltaic power plant at your premises. Our proposal has been customized based on your site conditions, roof feasibility, and daily energy requirements.\n\nSolar energy represents a sustainable, cost-effective method to hedge against rising commercial grid tariffs while drastically reducing your carbon footprint. Below is our comprehensive proposal, bill of material deliverables, pricing details, and warranty specifications.',
-            style: const pw.TextStyle(fontSize: 11, lineHeight: 1.4),
+            style: const pw.TextStyle(fontSize: 11),
           ),
           
           pw.SizedBox(height: 32),
           pw.Row(
-            mainpw.MainAxisAlignment.end,
+            mainAxisAlignment: pw.MainAxisAlignment.end,
             children: [
               pw.Column(
-                crosspw.CrossAxisAlignment.end,
+                crossAxisAlignment: pw.CrossAxisAlignment.end,
                 children: [
                   pw.Text('For HET Consultancy', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 11)),
                   pw.SizedBox(height: 40),
@@ -188,17 +188,17 @@ class PdfService {
           pw.Text('Customer Acceptance Signature', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 12)),
           pw.SizedBox(height: 48),
           pw.Row(
-            mainpw.MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
             children: [
               pw.Column(
-                crosspw.CrossAxisAlignment.start,
+                crossAxisAlignment: pw.CrossAxisAlignment.start,
                 children: [
                   pw.Text('Client Authorized Signatory', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 10)),
                   pw.Text('Date: ____/____/________', style: const pw.TextStyle(fontSize: 10)),
                 ],
               ),
               pw.Column(
-                crosspw.CrossAxisAlignment.end,
+                crossAxisAlignment: pw.CrossAxisAlignment.end,
                 children: [
                   pw.Text('For HET Consultancy', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 10)),
                   pw.Text('Authorized Signatory', style: const pw.TextStyle(fontSize: 10)),

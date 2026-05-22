@@ -50,7 +50,7 @@ class _QuotationDetailScreenState extends ConsumerState<QuotationDetailScreen> {
       if (status == QuotationStatus.approved) {
         final projects = ref.read(projectListProvider);
         final projectIndex = projects.indexWhere((p) => p.quotationId == q.id);
-        if (projectIndex != -index) {
+        if (projectIndex != -1) {
           final project = projects[projectIndex];
           await ref.read(projectListProvider.notifier).updateProjectStage(
             project.id,
