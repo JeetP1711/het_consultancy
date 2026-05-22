@@ -9,6 +9,7 @@ import '../../../core/widgets/app_button.dart';
 import '../../../core/widgets/status_badge.dart';
 import '../../../models/quotation_model.dart';
 import '../../../models/project_model.dart';
+import '../../../models/user_model.dart';
 import '../../../services/pdf_service.dart';
 import '../../auth/providers/auth_provider.dart';
 import '../../projects/providers/project_provider.dart';
@@ -86,10 +87,25 @@ class _QuotationDetailScreenState extends ConsumerState<QuotationDetailScreen> {
         panelQty: 0,
         inverterBrand: '',
         inverterQty: 0,
+        structure: '',
+        dcdb: '',
+        acdb: '',
+        lightningArrestor: '',
+        earthing: '',
+        cable: '',
+        accessories: '',
         price: 0,
         taxRate: 0,
         subsidy: 0,
         installationTime: 0,
+        bankName: '',
+        accountName: '',
+        accountNumber: '',
+        ifscCode: '',
+        branch: '',
+        terms: '',
+        warranty: '',
+        notes: '',
         status: QuotationStatus.draft,
         createdAt: DateTime.now(),
         updatedAt: DateTime.now(),

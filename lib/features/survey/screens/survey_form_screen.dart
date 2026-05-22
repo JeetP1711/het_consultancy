@@ -9,6 +9,7 @@ import '../../../core/utils/validators.dart';
 import '../../../core/widgets/app_button.dart';
 import '../../../core/widgets/app_text_field.dart';
 import '../../../models/survey_model.dart';
+import '../../../models/client_model.dart';
 import '../providers/survey_provider.dart';
 import '../../clients/providers/client_provider.dart';
 
@@ -164,7 +165,7 @@ class _SurveyFormScreenState extends ConsumerState<SurveyFormScreen> {
                                       border: Border.all(
                                         color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
                                         width: 1.5,
-                                        style: BorderStyle.dashed,
+                                        style: BorderStyle.solid,
                                       ),
                                     ),
                                     child: const Column(

@@ -6,6 +6,10 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/constants/app_colors.dart';
 import '../../../core/utils/extensions.dart';
+import '../../../models/client_model.dart';
+import '../../../models/quotation_model.dart';
+import '../../../models/project_model.dart';
+import '../../../models/survey_model.dart';
 import '../../clients/providers/client_provider.dart';
 import '../../quotations/providers/quotation_provider.dart';
 import '../../projects/providers/project_provider.dart';

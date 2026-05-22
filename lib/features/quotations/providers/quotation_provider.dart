@@ -66,7 +66,7 @@ final filteredQuotationsProvider = Provider<List<QuotationModel>>((ref) {
 });
 
 // Version list provider by proposal number
-final quotationVersionsProvider = FamilyProvider<List<QuotationModel>, String>((ref, proposalNumber) {
+final quotationVersionsProvider = Provider.family<List<QuotationModel>, String>((ref, proposalNumber) {
   ref.watch(quotationListProvider); // watch list to trigger updates
   return ref.read(quotationServiceProvider).getQuotationVersions(proposalNumber);
 });
