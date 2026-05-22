@@ -18,10 +18,11 @@ class EmptyState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Padding(
       padding: const EdgeInsets.all(24),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
             padding: const EdgeInsets.all(16),
@@ -62,6 +63,7 @@ class EmptyState extends StatelessWidget {
           ],
         ],
       ),
+     ),
     );
   }
 }

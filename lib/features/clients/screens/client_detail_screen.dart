@@ -7,6 +7,7 @@ import '../../../core/utils/extensions.dart';
 import '../../../core/widgets/status_badge.dart';
 import '../../../models/client_model.dart';
 import '../../../models/project_model.dart';
+import '../../../models/user_model.dart';
 import '../../auth/providers/auth_provider.dart';
 import '../../projects/providers/project_provider.dart';
 import '../providers/client_provider.dart';
